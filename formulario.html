@@ -1,0 +1,26 @@
+<html>
+<head>
+	<script type="text/javascript" src="js/validacao.js">    </script>
+</head>
+<body><form name="frm" action="noticias/salvar" method="post" onsubmit="return valida_dados();">
+	
+	<p><b>Nome:</b><br>
+	<input  type="text" name="nome" value="nome" size="45" required></p><br>
+	<p><b>Email:</b><br>
+	<input type="text" name="email" size="45" value="email" required></p><br>
+	<p><b>Telefone:</b><br>
+	<input type="text" name="telefone"  size="45" ></p><br>
+	<p><b>Data de nascimento:</b><br>
+	<input type="date" name="datanasc"  size="45" required></p><br>
+	<p><b>Linguagens</b><br>
+	<select name="linguagens">
+      <option value="">Selecione a inguagem preferida</option>
+      <option value="js">js</option>
+      <option value="php">php</option>
+      <option value="c++">c++</option>
+      <option value="todas">Todas</option>
+   </select>
+	
+	<p><input type="submit" name="sbt" value="Enviar"> <input type="reset" value="Limpar Formulário"></p>
+</form></body>
+</html>
